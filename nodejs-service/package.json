@@ -1,0 +1,23 @@
+{
+    "name": "@dboreham/tutorial-nodejs-app",
+    "version": "1.0.0",
+    "private": false,
+    "author": "d.boreh.am",
+    "license": "GPL-3.0",
+    "scripts": {
+        "clean": "yarn run rimraf dist",
+        "build": "babel ./src --out-dir ./dist/es --ignore \"**/*.test.js\" --copy-files",
+        "start": "node dist/es/main.js"
+    },
+    "dependencies": {
+        "debug": "^4.2.0"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.12.1",
+        "@babel/core": "^7.12.3",
+        "@babel/plugin-proposal-class-properties": "^7.12.1",
+        "@babel/plugin-proposal-export-default-from": "^7.12.1",
+        "@babel/plugin-transform-runtime": "^7.12.1",
+        "@babel/preset-env": "^7.12.1"
+    }
+}

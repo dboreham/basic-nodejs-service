@@ -1,0 +1,21 @@
+{
+    "name": "@dboreham/basic-nodejs-service",
+    "version": "1.0.0",
+    "description": "Dboreham Tutorials",
+    "private": true,
+    "author": "d.boreh.am",
+    "license": "GPL-3.0",
+    "workspaces": ["nodejs-service"],
+    "scripts": {
+      "build": "wsrun -t build",
+      "clean": "wsrun clean",
+      "lint": "wsrun lint",
+      "test": "wsrun -s test"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+      "wsrun": "^5.2.4",
+      "rimraf": "^3.0.2"
+    }
+}
